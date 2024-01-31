@@ -1,0 +1,8 @@
+D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/hal/../draw/../misc/lv_color.h:600:26:lv_color_hex	24	static
+D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/core/lv_disp.h:182:26:lv_scr_act	8	static
+../Core/Src/main.c:71:5:main	24	static
+../Core/Src/main.c:134:6:SystemClock_Config	88	static
+../Core/Src/main.c:180:13:MX_SPI1_Init	8	static
+../Core/Src/main.c:216:13:MX_DMA_Init	16	static
+../Core/Src/main.c:234:13:MX_GPIO_Init	56	static
+../Core/Src/main.c:388:6:Error_Handler	4	static,ignoring_inline_asm
