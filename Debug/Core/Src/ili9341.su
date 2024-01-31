@@ -13,9 +13,9 @@
 ../Core/Src/ili9341.c:267:13:ConvHL	24	static
 ../Core/Src/ili9341.c:280:6:ILI9341_DrawBitmap	16	static
 ../Core/Src/ili9341.c:292:6:ILI9341_DrawBitmapDMA	16	static
-../Core/Src/ili9341.c:303:6:ILI9341_EndOfDrawBitmap	4	static
-../Core/Src/ili9341.c:308:6:ILI9341_Reset	8	static
-../Core/Src/ili9341.c:318:6:ILI9341_SoftReset	16	static
-../Core/Src/ili9341.c:329:6:LCD_WR_REG	16	static
-../Core/Src/ili9341.c:337:13:LCD_WR_DATA	16	static
-../Core/Src/ili9341.c:345:13:LCD_direction	16	static
+../Core/Src/ili9341.c:304:6:ILI9341_EndOfDrawBitmap	4	static
+../Core/Src/ili9341.c:309:6:ILI9341_Reset	8	static
+../Core/Src/ili9341.c:319:6:ILI9341_SoftReset	16	static
+../Core/Src/ili9341.c:330:6:LCD_WR_REG	16	static
+../Core/Src/ili9341.c:338:13:LCD_WR_DATA	16	static
+../Core/Src/ili9341.c:346:13:LCD_direction	16	static

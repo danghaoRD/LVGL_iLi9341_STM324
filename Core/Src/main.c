@@ -23,7 +23,10 @@
 /* USER CODE BEGIN Includes */
 #include "lvgl.h"
 #include "LCDController.h"
-#include "demos/benchmark/lv_demo_benchmark.h"
+
+#if(LVGL_EXAMPLE == LVGL_EXAMPLE_2)
+#	include "demos/benchmark/lv_demo_benchmark.h"
+#endif
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -44,7 +47,6 @@
 /* Private variables ---------------------------------------------------------*/
 SPI_HandleTypeDef hspi1;
 DMA_HandleTypeDef hdma_spi1_tx;
-
 
 /* USER CODE BEGIN PV */
 
@@ -105,6 +107,7 @@ int main(void)
 
 
   // Change the active screen's background color
+#if(LVGL_EXAMPLE == LVGL_EXAMPLE_1)
   lv_obj_set_style_bg_color(lv_scr_act(), lv_color_hex(0x003a57), LV_PART_MAIN);
   lv_obj_set_style_text_color(lv_scr_act(), lv_color_hex(0xffffff), LV_PART_MAIN);
 
@@ -112,7 +115,11 @@ int main(void)
   lv_obj_t * spinner = lv_spinner_create(lv_scr_act(), 1000, 60);
   lv_obj_set_size(spinner, 64, 64);
   lv_obj_align(spinner, LV_ALIGN_BOTTOM_MID, 0, 0);
+#endif
 
+#if(LVGL_EXAMPLE == LVGL_EXAMPLE_2)
+lv_demo_benchmark();
+#endif
 //  lv_demo_benchmark();
   /* USER CODE END 2 */
 
@@ -199,7 +206,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;

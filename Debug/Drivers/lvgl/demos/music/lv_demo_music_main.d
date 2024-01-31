@@ -228,7 +228,9 @@ Drivers/lvgl/demos/music/lv_demo_music_main.o: \
  ../Drivers/lvgl/demos/music/../../src/extra/widgets/imgbtn/lv_imgbtn.h \
  ../Drivers/lvgl/demos/music/../../src/extra/widgets/imgbtn/../../../lvgl.h \
  ../Drivers/lvgl/demos/music/../../src/extra/widgets/span/lv_span.h \
- ../Drivers/lvgl/demos/music/../../src/extra/widgets/span/../../../lvgl.h
+ ../Drivers/lvgl/demos/music/../../src/extra/widgets/span/../../../lvgl.h \
+ ../Drivers/lvgl/demos/music/../benchmark/lv_demo_benchmark.h \
+ ../Drivers/lvgl/demos/music/../benchmark/../lv_demos.h
 ../Drivers/lvgl/demos/music/lv_demo_music_main.h:
 ../Drivers/lvgl/demos/music/lv_demo_music.h:
 ../Drivers/lvgl/demos/music/../lv_demos.h:
@@ -458,3 +460,5 @@ Drivers/lvgl/demos/music/lv_demo_music_main.o: \
 ../Drivers/lvgl/demos/music/../../src/extra/widgets/imgbtn/../../../lvgl.h:
 ../Drivers/lvgl/demos/music/../../src/extra/widgets/span/lv_span.h:
 ../Drivers/lvgl/demos/music/../../src/extra/widgets/span/../../../lvgl.h:
+../Drivers/lvgl/demos/music/../benchmark/lv_demo_benchmark.h:
+../Drivers/lvgl/demos/music/../benchmark/../lv_demos.h:

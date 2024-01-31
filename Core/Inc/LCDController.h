@@ -23,7 +23,12 @@ extern "C" {
 /*********************
  *      DEFINES
  *********************/
+#define LVGL_EXAMPLE_1  1 // spinner
+#define LVGL_EXAMPLE_2  2 // BENCHMARK
 
+#define LVGL_EXAMPLE	 LVGL_EXAMPLE_2
+
+#define	SPI_DMA_ON		1
 /**********************
  *      TYPEDEFS
  **********************/

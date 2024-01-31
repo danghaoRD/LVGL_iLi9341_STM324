@@ -254,7 +254,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/LCDController.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/lv_demo_benchmark.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../lv_demos.h \
- D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../../lvgl.h
+ D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../../lvgl.h \
+ D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../benchmark/lv_demo_benchmark.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -512,3 +513,4 @@ D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/extra/widgets/span/../
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/lv_demo_benchmark.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../lv_demos.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../../lvgl.h:
+D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../benchmark/lv_demo_benchmark.h:

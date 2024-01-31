@@ -88,16 +88,18 @@ void lv_port_disp_init(void)
      */
 
     /* Example for 1) */
+#if(SPI_DMA_ON)
+    /* Example for 2) */
+    static lv_disp_draw_buf_t draw_buf_dsc_2;
+    static lv_color_t buf_2_1[MY_DISP_HOR_RES * 80];                        /*A buffer for 80 rows*/
+    static lv_color_t buf_2_2[MY_DISP_HOR_RES * 80];                        /*An other buffer for 80 rows*/
+    lv_disp_draw_buf_init(&draw_buf_dsc_2, buf_2_1, buf_2_2, MY_DISP_HOR_RES * 80);   /*Initialize the display buffer*/
+#else
+
     static lv_disp_draw_buf_t draw_buf_dsc_1;
     static lv_color_t buf_1[MY_DISP_HOR_RES * 10];                          /*A buffer for 10 rows*/
     lv_disp_draw_buf_init(&draw_buf_dsc_1, buf_1, NULL, MY_DISP_HOR_RES * 10);   /*Initialize the display buffer*/
-
-    /* Example for 2) */
-//    static lv_disp_draw_buf_t draw_buf_dsc_2;
-//    static lv_color_t buf_2_1[MY_DISP_HOR_RES * 80];                        /*A buffer for 80 rows*/
-//    static lv_color_t buf_2_2[MY_DISP_HOR_RES * 80];                        /*An other buffer for 80 rows*/
-//    lv_disp_draw_buf_init(&draw_buf_dsc_2, buf_2_1, buf_2_2, MY_DISP_HOR_RES * 80);   /*Initialize the display buffer*/
-
+#endif
 
     /*-----------------------------------
      * Register the display in LVGL
@@ -116,8 +118,11 @@ void lv_port_disp_init(void)
     disp_drv.flush_cb = disp_flush;
 
     /*Set a display buffer*/
-    disp_drv.draw_buf = &draw_buf_dsc_1;
-
+	#if(SPI_DMA_ON)
+    	disp_drv.draw_buf = &draw_buf_dsc_2;
+	#else
+		disp_drv.draw_buf = &draw_buf_dsc_1;
+	#endif
     /*Required for Example 3)*/
     //disp_drv.full_refresh = 1;
 
@@ -167,15 +172,20 @@ static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_colo
 	  int height = area->y2 - area->y1 + 1;
 	  int width = area->x2 - area->x1 + 1;
 
-	  ILI9341_DrawBitmap(width, height, (uint8_t *)color_p);
+	#if(SPI_DMA_ON)
+		  ILI9341_DrawBitmapDMA(width, height, (uint8_t *)color_p);
+	#else
+		ILI9341_DrawBitmap(width, height, (uint8_t *)color_p);
+		/*IMPORTANT!!!
+		*Inform the graphics library that you are ready with the flushing*/
+		lv_disp_flush_ready(disp_drv);
+	#endif
 	  //ILI9341_DrawBitmapDMA(width, height, (uint8_t *)color_p);
-    /*IMPORTANT!!!
-     *Inform the graphics library that you are ready with the flushing*/
-   lv_disp_flush_ready(disp_drv);
 }
 
 void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
 {
+	HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, GPIO_PIN_SET);
 	lv_disp_flush_ready(&disp_drv);
 //	ILI9341_EndOfDrawBitmap();
 }

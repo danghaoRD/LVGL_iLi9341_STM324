@@ -227,7 +227,9 @@ Drivers/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.o: \
  ../Drivers/lvgl/demos/keypad_encoder/../../src/extra/widgets/imgbtn/lv_imgbtn.h \
  ../Drivers/lvgl/demos/keypad_encoder/../../src/extra/widgets/imgbtn/../../../lvgl.h \
  ../Drivers/lvgl/demos/keypad_encoder/../../src/extra/widgets/span/lv_span.h \
- ../Drivers/lvgl/demos/keypad_encoder/../../src/extra/widgets/span/../../../lvgl.h
+ ../Drivers/lvgl/demos/keypad_encoder/../../src/extra/widgets/span/../../../lvgl.h \
+ ../Drivers/lvgl/demos/keypad_encoder/../benchmark/lv_demo_benchmark.h \
+ ../Drivers/lvgl/demos/keypad_encoder/../benchmark/../lv_demos.h
 ../Drivers/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.h:
 ../Drivers/lvgl/demos/keypad_encoder/../lv_demos.h:
 ../Drivers/lvgl/demos/keypad_encoder/../../lvgl.h:
@@ -456,3 +458,5 @@ Drivers/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.o: \
 ../Drivers/lvgl/demos/keypad_encoder/../../src/extra/widgets/imgbtn/../../../lvgl.h:
 ../Drivers/lvgl/demos/keypad_encoder/../../src/extra/widgets/span/lv_span.h:
 ../Drivers/lvgl/demos/keypad_encoder/../../src/extra/widgets/span/../../../lvgl.h:
+../Drivers/lvgl/demos/keypad_encoder/../benchmark/lv_demo_benchmark.h:
+../Drivers/lvgl/demos/keypad_encoder/../benchmark/../lv_demos.h:

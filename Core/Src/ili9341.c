@@ -229,7 +229,7 @@ void ILI9341_Init(void)
 	LCD_WR_REG(0x29);
 	LCD_WR_DATA(0x2C);
 
-	LCD_direction(ROTATE_270);
+	LCD_direction(ROTATE_180);
 
 }
 
@@ -295,6 +295,7 @@ void ILI9341_DrawBitmapDMA(uint16_t w, uint16_t h, uint8_t *s)
 	LCD_WR_REG(0x2c);
 
 	DC_H();
+	CS_L();
 
 	ConvHL(s, (int32_t)w*h*2);
 	HAL_SPI_Transmit_DMA(&hspi1, (uint8_t*)s, w * h *2);
@@ -347,19 +348,19 @@ static void LCD_direction(LCD_Horizontal_t direction)
 	switch (direction) {
 	case ROTATE_0:
 		LCD_WR_REG(0x36);
-		LCD_WR_DATA(0x48);
+		LCD_WR_DATA(0xC8);
 		break;
 	case ROTATE_90:
 		LCD_WR_REG(0x36);
-		LCD_WR_DATA(0x28);
+		LCD_WR_DATA(0xA8);
 		break;
 	case ROTATE_180:
 		LCD_WR_REG(0x36);
-		LCD_WR_DATA(0x88);
+		LCD_WR_DATA(0x78);
 		break;
 	case ROTATE_270:
 		LCD_WR_REG(0x36);
-		LCD_WR_DATA(0xE8);
+		LCD_WR_DATA(0x68);
 		break;
 	}
 }
