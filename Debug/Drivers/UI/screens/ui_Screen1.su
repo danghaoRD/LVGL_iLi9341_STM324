@@ -1,0 +1,2 @@
+../Drivers/UI/screens/../../lvgl/src/hal/../draw/../misc/lv_color.h:600:26:lv_color_hex	24	static
+../Drivers/UI/screens/ui_Screen1.c:8:6:ui_Screen1_screen_init	16	static

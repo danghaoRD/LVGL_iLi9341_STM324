@@ -25,8 +25,9 @@ extern "C" {
  *********************/
 #define LVGL_EXAMPLE_1  1 // spinner
 #define LVGL_EXAMPLE_2  2 // BENCHMARK
+#define LVGL_EXAMPLE_3  3 // touch ui
 
-#define LVGL_EXAMPLE	 LVGL_EXAMPLE_2
+#define LVGL_EXAMPLE	 LVGL_EXAMPLE_3
 
 #define	SPI_DMA_ON		1
 /**********************

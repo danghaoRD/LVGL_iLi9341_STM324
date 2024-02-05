@@ -25,6 +25,9 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32F4xx_HAL_Driver/Src \
+Drivers/UI/components \
+Drivers/UI/screens \
+Drivers/UI \
 Drivers/lvgl/demos/benchmark/assets \
 Drivers/lvgl/demos/benchmark \
 Drivers/lvgl/demos/keypad_encoder \
