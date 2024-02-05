@@ -1,2 +1,2 @@
-../Drivers/UI/ui.c:31:6:ui_event_Slider1	24	static
-../Drivers/UI/ui.c:42:6:ui_init	32	static
+../Drivers/UI/ui.c:36:6:ui_event_Arc1	24	static
+../Drivers/UI/ui.c:47:6:ui_init	32	static

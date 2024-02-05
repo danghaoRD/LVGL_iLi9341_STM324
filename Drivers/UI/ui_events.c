@@ -31,9 +31,9 @@ void button1Clicked(lv_event_t * e)
 char buf[4] = {0};
 void sliderChanged(lv_event_t * e)
 {
-	int slide_value = lv_slider_get_value(ui_Slider1);
-	sprintf(buf, "%d", slide_value);
-	lv_textarea_set_text(ui_TextArea1, buf);
-	TIM4->CCR4 = slide_value;
+//	int slide_value = lv_slider_get_value(ui_Slider1);
+//	sprintf(buf, "%d", slide_value);
+//	lv_textarea_set_text(ui_TextArea1, buf);
+//	TIM4->CCR4 = slide_value;
 	// Your code here
 }

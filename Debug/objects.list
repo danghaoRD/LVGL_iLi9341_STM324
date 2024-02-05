@@ -26,6 +26,7 @@
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
 "./Drivers/UI/components/ui_comp_hook.o"
+"./Drivers/UI/fonts/ui_font_Number.o"
 "./Drivers/UI/screens/ui_Screen1.o"
 "./Drivers/UI/ui.o"
 "./Drivers/UI/ui_events.o"
