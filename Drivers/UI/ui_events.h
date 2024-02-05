@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-void button1Clicked(lv_event_t * e);
+void sliderChanged(lv_event_t * e);
 
 #ifdef __cplusplus
 } /*extern "C"*/

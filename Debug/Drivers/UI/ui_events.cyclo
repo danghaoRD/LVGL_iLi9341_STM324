@@ -1,3 +1,5 @@
-../Drivers/UI/../lvgl/src/hal/../draw/../misc/lv_color.h:600:26:lv_color_hex	1
-../Drivers/UI/../lvgl/src/core/lv_disp.h:182:26:lv_scr_act	1
-../Drivers/UI/ui_events.c:8:6:button1Clicked	5
+D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/hal/../draw/../misc/lv_color.h:600:26:lv_color_hex	1
+D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/core/lv_disp.h:182:26:lv_scr_act	1
+D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/widgets/lv_slider.h:130:23:lv_slider_get_value	1
+../Drivers/UI/ui_events.c:9:6:button1Clicked	5
+../Drivers/UI/ui_events.c:32:6:sliderChanged	1

@@ -25,6 +25,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/lvgl.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/misc/lv_log.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/misc/../lv_conf_internal.h \
@@ -253,7 +255,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/extra/widgets/span/../../../lvgl.h \
  ../Core/Inc/LCDController.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui.h \
- D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/../lvgl/lvgl.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui_helpers.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui_events.h \
@@ -285,6 +286,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/lvgl.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/misc/lv_log.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/misc/../lv_conf_internal.h:
@@ -513,7 +516,6 @@ D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/extra/widgets/span/lv_
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/extra/widgets/span/../../../lvgl.h:
 ../Core/Inc/LCDController.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui.h:
-D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/../lvgl/lvgl.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui_helpers.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui_events.h:

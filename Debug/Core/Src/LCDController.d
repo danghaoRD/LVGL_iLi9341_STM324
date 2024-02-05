@@ -252,6 +252,8 @@ Core/Src/LCDController.o: ../Core/Src/LCDController.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Core/Inc/ili9341.h ../Core/Inc/main.h
 ../Core/Inc/LCDController.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/lvgl.h:
@@ -507,5 +509,7 @@ D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/extra/widgets/span/../
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../Core/Inc/ili9341.h:
 ../Core/Inc/main.h:
