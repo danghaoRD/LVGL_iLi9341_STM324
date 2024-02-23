@@ -254,6 +254,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/extra/widgets/span/lv_span.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/extra/widgets/span/../../../lvgl.h \
  ../Core/Inc/LCDController.h \
+ D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/lv_demo_benchmark.h \
+ D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../lv_demos.h \
+ D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../../lvgl.h \
+ D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../benchmark/lv_demo_benchmark.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui_helpers.h \
  D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui.h \
@@ -515,6 +519,10 @@ D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/extra/widgets/imgbtn/.
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/extra/widgets/span/lv_span.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/src/extra/widgets/span/../../../lvgl.h:
 ../Core/Inc/LCDController.h:
+D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/lv_demo_benchmark.h:
+D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../lv_demos.h:
+D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../../lvgl.h:
+D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/lvgl/demos/benchmark/../benchmark/lv_demo_benchmark.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui_helpers.h:
 D:/Code/Learn/STM32/TFT_Display/lvgl_ex2/Drivers/UI/ui.h:
